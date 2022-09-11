@@ -34,5 +34,5 @@ jobs:
         run: flit install --symlink
       - name: Lint
         run: bash scripts/format.sh
-      - name: check Static Analysis
-        run: bash scripts/lint.sh
+      # - name: check Static Analysis
+        # run: bash scripts/lint.sh
