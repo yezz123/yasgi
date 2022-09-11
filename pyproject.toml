@@ -1,0 +1,48 @@
+[build-system]
+requires = ["flit"]
+build-backend = "flit.buildapi"
+
+[tool.flit.metadata]
+module = "yasgi"
+dist-name = "yasgi"
+author = "Yasser Tahiri"
+author-email = "hello@yezz.me"
+home-page = "https://github.com/yezz123/yasgi"
+classifiers = [
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Developers",
+    "Framework :: AsyncIO",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Internet :: WWW/HTTP :: Session",
+    "Typing :: Typed",
+]
+description-file = "README.md"
+requires-python = ">=3.9"
+requires = [
+    "orjson"
+]
+
+[tool.flit.metadata.requires-extra]
+dev = [
+    "python-daemon",
+    "python-dotenv",
+    "uvicorn[standard]",
+    "requests",
+]
+lint = [
+    "pre-commit==2.19.0",
+    "mypy==0.931",
+]
+test = [
+    "pytest==7.1.2",
+    "pytest-asyncio == 0.18.3",
+    "codecov==2.1.12",
+    "pytest-cov==3.0.0",
+]
+
+[tool.flit.metadata.urls]
+Source = "https://github.com/yezz123/yasgi"
