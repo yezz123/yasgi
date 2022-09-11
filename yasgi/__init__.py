@@ -8,7 +8,7 @@ from yasgi.requests import HTTPRequest, Request
 from yasgi.responses import HTTPResponse, Response
 from yasgi.routing import HTTPRouting, Routing, WebsocketsRouting
 
-__version__ = "1.0.0"
+__version__ = "0.1.0"
 
 __all__ = [
     "YASGI",
